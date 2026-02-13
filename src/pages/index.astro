@@ -1,17 +1,35 @@
 ---
+import "./Style/general.css";
+import MainLayout from "../Layout/MainLayout.astro";
+import ArtistCard from "../Components/ArtistCard.astro";
 
+import Sections from "../Components/Sections.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<MainLayout title="index">
+  <main>
+    <Sections title="Albums">
+      <ArtistCard name="Monkey Bussiness" image="/album-images/album-31.png" alt="Black Eyed Peas Album Cover" artist="Black Eyed Peas" variant="square" />
+
+      <ArtistCard name="Swagger Like US" image="album-images/album-4.png" alt="Jay Z Album Cover" artist="Jay Z" variant="square" />
+
+      <ArtistCard name="Rebirth" image="album-images/album-50.png" alt="Lil Wayne Album Cover" artist="Lil Wayne" variant="square" />
+
+      <ArtistCard name="Get rich or die trying" image="album-images/album-39.png" alt="50 cent Album Cover" artist="50 cent" variant="square" />
+
+      <ArtistCard explicit={true} name="Kiss & Tell" image="album-images/album-17.png" alt="Selena Gomez Album Cover" artist="Lil Wayne" variant="square" />
+    </Sections>
+
+    <Sections title="Artists">
+      <ArtistCard name="Miley Cyrus" image="album-images/album-24.png" alt="Miley Cyrus kunstner billede" variant="cirkle" />
+
+      <ArtistCard name="Justin Bieber" image="album-images/album-21.png" alt="Justin Bieber kunstner billede" variant="cirkle" />
+
+      <ArtistCard name="JayZ" image="/album-images/album-4.png" alt="JayZ kunstner billede" variant="cirkle" />
+
+      <ArtistCard name="Katey Perry" image="album-images/album-43.png" alt="Katey Perry kunstner cover" variant="cirkle" />
+
+      <ArtistCard name="Katey Perry" image="album-images/album-43.png" alt="Katey Perry kunstner cover" variant="cirkle" />
+    </Sections>
+  </main>
+</MainLayout>

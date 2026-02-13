@@ -1,0 +1,88 @@
+---
+
+---
+
+<header>
+  <div class="logo">
+    <a href="index.html">
+      <img src="logos/Spotify-Logo.png" alt="logo" />
+    </a>
+  </div>
+
+  <nav>
+    <ul class="menu">
+      <li class="searchbar_img"><img class="menu_searchbar_img" src="logos/search_bar.webp" alt="Search Bar" /></li>
+      <li><img class="arrow_img" src="logos/Arrow.webp" alt="" /></li>
+      <li><a href="/">Home</a></li>
+      <li><a href="">Your Playlists</a></li>
+      <li><a href="">Top Artists</a></li>
+      <li><a href="/podcast">Podcast</a></li>
+    </ul>
+  </nav>
+</header>
+
+<style>
+  /************ MENU ************/
+
+  header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    padding: 0px 20px;
+    margin-bottom: 2rem;
+    background-color: #121212;
+  }
+
+  .logo img {
+    width: 50px;
+    height: auto;
+  }
+
+  .searchbar_img {
+    width: 300px;
+    height: auto;
+  }
+
+  .menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    transition: all 0.5s ease;
+    align-items: center;
+  }
+
+  .menu li {
+    margin-right: 20px;
+  }
+
+  .menu li:last-child {
+    margin-right: 0;
+  }
+
+  .menu a {
+    display: block;
+    align-items: center;
+    color: #8c8c8c;
+    justify-content: center;
+    text-decoration: none;
+    font-weight: 550;
+  }
+
+  .menu a:hover {
+    color: white;
+    text-decoration: overline;
+
+    transition: all 0.5s ease;
+  }
+
+  /********** BILLEDER ************/
+  .arrow_img {
+    height: auto;
+    width: 40px;
+  }
+</style>

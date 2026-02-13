@@ -1,0 +1,52 @@
+---
+import Ebadge from "./Ebadge.astro";
+const { name, image, alt, variant, artist, explicit } = Astro.props;
+const { eBadge } = Astro.props;
+---
+
+<div>
+  <img class={variant} src={image} alt={alt} />
+  <p class="ArtistName">{name}</p>
+  <p class="artName">
+    {explicit && <Ebadge />}
+    {artist}
+  </p>
+</div>
+
+<style>
+  img:hover {
+    transform: scale(1.03);
+    transition: all 0.2s ease;
+  }
+  .cirkle {
+    height: auto;
+    width: 180px;
+    border-radius: 100px;
+    overflow-x: auto;
+  }
+
+  .ArtistName {
+    margin-bottom: 1rem;
+  }
+
+  .artName {
+    opacity: 60%;
+    font-size: 1rem;
+    margin: 0;
+    margin-bottom: 1rem;
+  }
+
+  .square {
+    height: auto;
+    width: 180px;
+    border-radius: 10px;
+    overflow-x: auto;
+  }
+
+  .AlbumName {
+    font-weight: bold;
+    font-size: large;
+    margin: 0;
+    margin-bottom: 0.5rem;
+  }
+</style>

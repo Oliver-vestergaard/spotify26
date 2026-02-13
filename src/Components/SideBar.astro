@@ -1,0 +1,31 @@
+---
+const { name, href, alt } = Astro.props;
+---
+
+<div class="sideBarButton">
+  <a href={href} class="Cta">{name}</a>
+</div>
+
+<style>
+  .Cta {
+    display: block;
+    background-color: #4bd759;
+    margin: 1rem;
+    margin-bottom: 2rem;
+    padding: 0.7rem;
+    border-radius: 20px;
+    white-space: nowrap;
+    width: auto;
+    height: 45px;
+    text-decoration: none;
+    text-align: center;
+    box-shadow: 0px 3px 4px #6f6f6f;
+  }
+
+  .Cta:hover {
+    box-shadow: 0 0 10px #ffffff;
+
+    transform: scale(1.05);
+    transition: all 0.1s ease;
+  }
+</style>

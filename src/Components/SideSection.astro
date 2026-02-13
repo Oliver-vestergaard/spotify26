@@ -1,0 +1,20 @@
+---
+import SideBar from "./SideBar.astro";
+---
+
+<section class="sideBar">
+  <SideBar name="Browse Podcast" href="/podcast" />
+  <SideBar name="Create new Playlist" href="" />
+  <slot />
+</section>
+
+<style>
+  .sideBar {
+    display: flex;
+    flex-direction: column;
+    gap: 50px; /* afstand mellem knapperne */
+    background-color: #121212;
+    border-radius: 20px;
+    grid-column: 1/2;
+  }
+</style>
